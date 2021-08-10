@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: url(travel1.jpeg) no-repeat;
+    background-size: cover;
+    color: black;
+    font-family: "open sans";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+    font-weight: bolder;
+    background: #0f2453;
+  }
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "roboto";
+    margin: 0 2rem;
+  }
+  header div i {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+  header nav {
+    padding: 1rem 2rem;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  nav li a {
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    color:white;
+    transition: all 250ms ease-in;
+  }
+  nav li a:hover {
+    background: #ffce14;
+    color:yellow;
+  }
+  .titles {
+    color: black;
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+  }
+  .main>input{
+    flex:1;
+    border:3px solid green;
+    height:30px;
+    width:300px;
+    border-radius:30px;
+    padding:0px 10px;
+
+  }
+ 
+  
+ 
+  
+  .titles h1 {
+    font-family: "roboto";
+    font-size: 5rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 0 black;
+    color:black;
+  }
+  .titles p {
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 0 black;
+    font-size: 1rem;
+  }
+  .boxe {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 90vw;
+  }
+  .box {
+    background:yellow;
+    margin: 5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    max-height: 180px;
+    min-height: 180px;
+    transition: all 250ms ease-out;
+  }
+  .box:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: translateY(-20%);
+    cursor:pointer;
+  }
+  .box a {
+    text-decoration: none;
+    color: black;
+  }
+  .icons {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  .text h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    color: black;
+  }
+  .text p {
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: left;
+    font-size:2 rem;
+  }
+  .text {
+    padding: 3rem;
+  }
+  .text h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    font-size: 1.07rem;
+  }
+  .text p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  nav li a:hover {
+    background:yellow;
+    color:black;
+  }
+}
+@media (max-width: 1160px) {
+  
+
+    body {
+      height: 100%;
+    }
+    .boxe {
+      flex-direction: column;
+    }
+    .box:hover {
+      background: rgba(255, 255, 255, 0.7);
+      transform: none;
+    }
+    .titles h1 {
+      font-size: 3rem;
+    }
+  }
+  
